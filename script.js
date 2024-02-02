@@ -211,22 +211,35 @@
 
 //Hacker Man
 
-async function hacker(){
-    setTimeout(()=>{
-    console.log("Hacking program excuting");
-    color = "Green";
-    },2000);
-    setTimeout(()=>{
-      console.log("UserName is fetching.......");
-        },3000) ;
-        setTimeout(()=>{
-            console.log("Username is aakash");
-            },4000);
-             setTimeout(()=>{
-                console.log("Attacking to phone number..........");
-                },5000);
-                 setTimeout(()=>{
-                    console.log("Phone in is 7748947587");
-                    },6000)
-}
-hacker()
+// async function hacker(){
+//     setTimeout(()=>{
+//     console.log("Hacking program excuting");
+//     color = "Green";
+//     },2000);
+//     setTimeout(()=>{
+//       console.log("UserName is fetching.......");
+//         },3000) ;
+//         setTimeout(()=>{
+//             console.log("Username is aakash");
+//             },4000);
+//              setTimeout(()=>{
+//                 console.log("Attacking to phone number..........");
+//                 },5000);
+//                  setTimeout(()=>{
+//                     console.log("Phone in is 7748947587");
+//                     },6000)
+// }
+// hacker()
+
+
+
+// Fetch API
+ const data=fetch('https://fakestoreapi.com/products')
+ data.then((value1)=>{
+  return value1.json()
+ })
+ .then((value2)=>{
+ value2.map((data,index)=>(
+  console.log(data.title )
+ ))
+ })
