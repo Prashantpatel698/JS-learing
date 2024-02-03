@@ -234,12 +234,49 @@
 
 
 // Fetch API
- const data=fetch('https://fakestoreapi.com/products')
- data.then((value1)=>{
-  return value1.json()
- })
- .then((value2)=>{
- value2.map((data,index)=>(
-  console.log(data.title )
- ))
- })
+//  const data=fetch('https://fakestoreapi.com/products')
+//  data.then((value1)=>{
+//   return value1.json()
+//  })
+//  .then((value2)=>{
+//  value2.map((data,index)=>(
+//   console.log(data.title )
+//  ))
+//  })
+
+// const data =fetch("https://fakestoreapi.com/products")
+// data.then((response)=>{
+//     console.log(response.status)
+//     console.log(response.ok)
+//     return response.json()
+//     // return response.text()
+
+// }).then((value)=>{
+//     console.log(value)
+// })
+
+
+// fetch api with post 
+const createTodo= async(todo)=>{
+const options={
+    method:"POST",
+    headers:{
+        "Content-type":"application/json"
+    },body: JSON.stringify(todo),
+}
+const p = await fetch('https://jsonplaceholder.typicode.com/posts',options);
+let response=  await p.json();
+return response;
+}
+
+
+const mainFunc= async()=>{
+    let todo= {
+        title: 'tarunn  ',
+        body: 'patel',
+        userId: 1101,
+      }
+    let todor =  await createTodo(todo);
+    console.log(todor)
+}
+mainFunc()
