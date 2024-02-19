@@ -317,8 +317,23 @@
 //     }
 //   }
 //   checkCookie()
-var key =prompt("Enter key  sir :");
-var value =prompt("Enter your name sir :");
+// var key =prompt("Enter key  sir :");
+// var value =prompt("Enter your name sir :");
 
-document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
-console.log(document.cookie)
+// document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+// console.log(document.cookie)
+
+//localStroage
+
+var key = prompt("enter the key your want to set :");
+var value = prompt("enter the value ");
+
+localStorage.setItem(key,value);
+console.log(localStorage.getItem(key))
+
+// if(key=="bhopal")
+// {
+//   localStorage.removeItem(key)
+// }
+
+localStorage.clear()
