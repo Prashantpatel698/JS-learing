@@ -325,15 +325,28 @@
 
 //localStroage
 
-var key = prompt("enter the key your want to set :");
-var value = prompt("enter the value ");
+// var key = prompt("enter the key your want to set :");
+// var value = prompt("enter the value ");
 
-localStorage.setItem(key,value);
-console.log(localStorage.getItem(key))
+// localStorage.setItem(key,value);
+// console.log(localStorage.getItem(key))
 
 // if(key=="bhopal")
 // {
 //   localStorage.removeItem(key)
 // }
 
-localStorage.clear()
+// localStorage.clear()
+
+
+//session Storage
+// var key = prompt("enter the key your want to set :");
+// var value = prompt("enter the value ");
+// sessionStorage.setItem(key,value)
+// console.log(sessionStorage.getItem(key))
+
+
+// Window : Storage Event
+window.onstorage =()=>{
+  alert()
+}
