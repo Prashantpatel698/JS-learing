@@ -357,16 +357,22 @@
 class RailwayFrom{
   submit()
   {
-    alert("From is submitedd")
+    alert(this.name+": From is submitedd")
   }
   cancel()
   {
-    alert("From is canceled")
+    alert(this.name+": From is canceled")
+  }
+  fill(name)
+  {
+    this.name= name;
   }
 }
 
 let tarun = new RailwayFrom();
+tarun.fill("tarun");
 let ashu = new RailwayFrom()
+ashu.fill("ashu")
 
 tarun.submit()
 ashu.submit()
