@@ -347,6 +347,27 @@
 
 
 // Window : Storage Event
-window.onstorage =()=>{
-  alert()
+// window.onstorage =()=>{
+//   alert()
+// }
+
+
+
+// Class and Objects
+class RailwayFrom{
+  submit()
+  {
+    alert("From is submitedd")
+  }
+  cancel()
+  {
+    alert("From is canceled")
+  }
 }
+
+let tarun = new RailwayFrom();
+let ashu = new RailwayFrom()
+
+tarun.submit()
+ashu.submit()
+tarun.cancel()
