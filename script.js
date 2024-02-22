@@ -354,26 +354,52 @@
 
 
 // Class and Objects
+// class RailwayFrom{
+//   submit()
+//   {
+//     alert(this.name+": From is submitedd")
+//   }
+//   cancel()
+//   {
+//     alert(this.name+": From is canceled")
+//   }
+//   fill(name)
+//   {
+//     this.name= name;
+//   }
+// }
+
+// let tarun = new RailwayFrom();
+// tarun.fill("tarun");
+// let ashu = new RailwayFrom()
+// ashu.fill("ashu")
+
+// tarun.submit()
+// ashu.submit()
+// tarun.cancel()
+
+
 class RailwayFrom{
+  constructor(name,trainno)
+  {
+    this.name = name;
+    this.trainno = trainno;
+  }
   submit()
-  {
-    alert(this.name+": From is submitedd")
+    {
+      alert(this.name+""+this.trainno+": From is submitedd")
+    }
+    cancel()
+    {
+      alert(this.name+" "+this.trainno+": From is canceled")
+    }
   }
-  cancel()
-  {
-    alert(this.name+": From is canceled")
-  }
-  fill(name)
-  {
-    this.name= name;
-  }
-}
+  
 
-let tarun = new RailwayFrom();
-tarun.fill("tarun");
-let ashu = new RailwayFrom()
-ashu.fill("ashu")
+  let tarun = new RailwayFrom("tarun koshti",20126);
+  tarun.submit()
+  
 
-tarun.submit()
-ashu.submit()
-tarun.cancel()
+  let harshit = new RailwayFrom("harshit",2012226);
+  harshit.submit()
+  
