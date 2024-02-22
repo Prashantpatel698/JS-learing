@@ -19,7 +19,7 @@
 //  arr[0]=13;
 //  arr[2]=22;
 //  console.log(arr);
- 
+
 
 // muteable method 
 // Updation on array
@@ -45,7 +45,7 @@
 // { 
 //    console.log("start")
 //     callback("processing!!!!!!!!");
-    
+
 // }
 // function Show(result)
 // {
@@ -134,28 +134,28 @@
 
 
 // async and await - async make a funtion to return a promise and await make a funtion pause the execution for a promise and wait for resolve promise before it continues.
- 
+
 // async function harry(){
 //     const delhi = new Promise((resolve, reject)=>{
 //         setTimeout(()=>{
 //             resolve("27 deg")
-    
+
 //         },2000)
 //     })
-    
+
 //     const bhopal = new Promise((resolve, reject)=>{
 //         setTimeout(()=>{
 //             resolve("19 deg")
-    
+
 //         },5000)
 //     })
 
 //   console.log("delhi weather is fatching...")
 //   let dehliw = await delhi;
-  
+
 //   console.log("delhi weather is fatched:"
 //   +dehliw)
-  
+
 //   console.log("bhopal weather is fatching...")
 //   let bhopalw = await bhopal;
 //   console.log("bhopal weather is fatched:"+bhopalw)
@@ -205,7 +205,7 @@
 //     console.log(error.name)
 //     console.log(error.message)
 //     console.log(error.stack)
-    
+
 // }
 
 
@@ -289,7 +289,7 @@
 //     let expires = "expires="+d.toUTCString();
 //     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 //   }
-  
+
 //   function getCookie(cname) {
 //     let name = cname + "=";
 //     let ca = document.cookie.split(';');
@@ -304,7 +304,7 @@
 //     }
 //     return "";
 //   }
-  
+
 //   function checkCookie() {
 //     let user = getCookie("username");
 //     if (user != "") {
@@ -379,27 +379,60 @@
 // tarun.cancel()
 
 
-class RailwayFrom{
-  constructor(name,trainno)
-  {
-    this.name = name;
-    this.trainno = trainno;
-  }
-  submit()
-    {
-      alert(this.name+""+this.trainno+": From is submitedd")
-    }
-    cancel()
-    {
-      alert(this.name+" "+this.trainno+": From is canceled")
-    }
-  }
-  
+// contructors
+// class RailwayFrom{
+//   constructor(name,trainno)
+//   {
+//     this.name = name;
+//     this.trainno = trainno;
+//   }
+//   submit()
+//     {
+//       alert(this.name+""+this.trainno+": From is submitedd")
+//     }
+//     cancel()
+//     {
+//       alert(this.name+" "+this.trainno+": From is canceled")
+//     }
+//   }
 
-  let tarun = new RailwayFrom("tarun koshti",20126);
-  tarun.submit()
-  
 
-  let harshit = new RailwayFrom("harshit",2012226);
-  harshit.submit()
-  
+//   let tarun = new RailwayFrom("tarun koshti",20126);
+//   tarun.submit()
+
+
+//   let harshit = new RailwayFrom("harshit",2012226);
+//   harshit.submit()
+
+
+// Inheritance
+class car {
+ average(av)
+ { this.average = av;
+
+ }
+  carspeed(speed) {
+    this.speed = speed;
+
+  }
+
+}
+
+class volvo extends car {
+  engine(hp) {
+    this.hp = hp;
+  }
+  show() {
+    console.log(`this car have ${this.speed} KM/H and color is ${this.color} and it engine power ${this.hp} average is ${this.average} /km`);
+  }
+
+
+}
+
+let k10 = new volvo();
+
+
+k10.carspeed(200);
+k10.engine(1500);
+k10.average(12)
+k10.show()
