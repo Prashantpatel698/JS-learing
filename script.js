@@ -438,35 +438,27 @@
 // k10.show()
 
 
-// prototype inheritance
-
+// prototype inheritance-----------------------------------
 // we create one human object which store human things what human can do
-
-let human = {
-  eat:"food",
-  name:"tarun",
-  canTalk:true,
-  canSleep:true
-}
-
+// let human = {
+//   eat:"food",
+//   name:"tarun",
+//   canTalk:true,
+//   canSleep:true
+// }
 // then we create in another object for tech student what can student to do 
-
-let coder ={
-  pl:"java",
-  problemSoloving:true,
-  dsa:true
-}
-
-
+// let coder ={
+//   pl:"java",
+//   problemSoloving:true,
+//   dsa:true
+// }
 // prototypal inheritance
-
-coder.__proto__ = human;
-
-console.log(human)
-console.log(coder)
+// coder.__proto__ = human;
+// console.log(human)
+// console.log(coder)
 
 
-// gfg example
+// gfg example------------------------------------------------
 // let animal = {
 //   eats: true
 // };
@@ -480,3 +472,34 @@ console.log(coder)
 // alert( rabbit.eats ); // true (**)
 // // alert(  ); // tru
 // console.log(rabbit)
+
+
+// method overredding or super keyword------------------------------
+
+class phone {
+  call(){
+    console.log("callings..........")
+  }
+
+ message(){
+    console.log("messeing.........")
+  }
+
+  photo()
+  {
+    console.log("capture your best moment with lava")
+  }
+};
+
+class smartPhone extends phone{
+  
+    photo(){
+     super.photo();
+     console.log("with OIS camera")
+    }
+}
+
+let Nokia = new phone();
+let s22 = new smartPhone();
+console.log(Nokia.photo());
+console.log(s22.photo());
