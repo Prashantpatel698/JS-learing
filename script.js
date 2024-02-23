@@ -475,41 +475,58 @@
 
 
 // method overredding or super keyword------------------------------
+// class phone {
+//   constructor(name){
+//     console.log(`${name} your are a genius`)
+//   }
+//   call(){
+//     console.log("callings..........")
+//   }
 
-class phone {
-  constructor(name){
-    console.log(`${name} your are a genius`)
-  }
-  call(){
-    console.log("callings..........")
-  }
+//  message(){
+//     console.log("messeing.........")
+//   }
 
- message(){
-    console.log("messeing.........")
-  }
+//   photo()
+//   {
+//     console.log("capture your best moment with lava")
+//   }
+// };
+// class smartPhone extends phone{
+//   // if there in  no contructor in the child class javascript engine by default create this !!!!!!
+//   constructor(name){
+//     super(name);
+//     console.log("newly created contructors")
+//   }
+//     photo(){
+//      super.photo();
+//      console.log("with OIS camera")
+//     }
+// }
+// // let Nokia = new phone()
+// let s22 = new smartPhone("samsung");
+// // console.log(Nokia.photo());  
+// console.log(s22.photo());
 
-  photo()
-  {
-    console.log("capture your best moment with lava")
-  }
-};
 
-class smartPhone extends phone{
-  // if there in  no contructor in the child class javascript engine by default create this !!!!!!
-  constructor(name){
-    super(name);
-    console.log("newly created contructors")
-  }
-  
+// Static method -----------------------------------------------------------------------
 
-  
-    photo(){
-     super.photo();
-     console.log("with OIS camera")
-    }
+class animal{
+   static  name ="donkey";
+
+     static eat(){
+      return `${this.name} is eating ..`
+     }
 }
 
-// let Nokia = new phone()
-let s22 = new smartPhone("samsung");
-// console.log(Nokia.photo());  
-console.log(s22.photo());
+class dog extends animal{
+  sleep(name){
+    return `${this.name} is sleeping.......`
+  }
+}
+
+let d = new animal();
+
+let a = new dog("pupyy")
+console.log(dog.name)
+console.log(dog.eat())
