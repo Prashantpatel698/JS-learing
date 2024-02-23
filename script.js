@@ -406,33 +406,77 @@
 
 
 // Inheritance
-class car {
- average(av)
- { this.average = av;
+// class car {
+//  average(av)
+//  { this.average = av;
 
- }
-  carspeed(speed) {
-    this.speed = speed;
+//  }
+//   carspeed(speed) {
+//     this.speed = speed;
 
-  }
+//   }
 
+// }
+
+// class volvo extends car {
+//   engine(hp) {
+//     this.hp = hp;
+//   }
+//   show() {
+//     console.log(`this car have ${this.speed} KM/H and color is ${this.color} and it engine power ${this.hp} average is ${this.average} /km`);
+//   }
+
+
+// }
+
+// let k10 = new volvo();
+
+
+// k10.carspeed(200);
+// k10.engine(1500);
+// k10.average(12)
+// k10.show()
+
+
+// prototype inheritance
+
+// we create one human object which store human things what human can do
+
+let human = {
+  eat:"food",
+  name:"tarun",
+  canTalk:true,
+  canSleep:true
 }
 
-class volvo extends car {
-  engine(hp) {
-    this.hp = hp;
-  }
-  show() {
-    console.log(`this car have ${this.speed} KM/H and color is ${this.color} and it engine power ${this.hp} average is ${this.average} /km`);
-  }
+// then we create in another object for tech student what can student to do 
 
-
+let coder ={
+  pl:"java",
+  problemSoloving:true,
+  dsa:true
 }
 
-let k10 = new volvo();
+
+// prototypal inheritance
+
+coder.__proto__ = human;
+
+console.log(human)
+console.log(coder)
 
 
-k10.carspeed(200);
-k10.engine(1500);
-k10.average(12)
-k10.show()
+// gfg example
+// let animal = {
+//   eats: true
+// };
+// let rabbit = {
+//   jumps: true
+// };
+
+// rabbit.__proto__ = animal; // (*)
+
+// // we can find both properties in rabbit now:
+// alert( rabbit.eats ); // true (**)
+// // alert(  ); // tru
+// console.log(rabbit)
