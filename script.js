@@ -477,6 +477,9 @@
 // method overredding or super keyword------------------------------
 
 class phone {
+  constructor(name){
+    console.log(`${name} your are a genius`)
+  }
   call(){
     console.log("callings..........")
   }
@@ -492,6 +495,13 @@ class phone {
 };
 
 class smartPhone extends phone{
+  // if there in  no contructor in the child class javascript engine by default create this !!!!!!
+  constructor(name){
+    super(name);
+    console.log("newly created contructors")
+  }
+  
+
   
     photo(){
      super.photo();
@@ -499,7 +509,7 @@ class smartPhone extends phone{
     }
 }
 
-let Nokia = new phone();
-let s22 = new smartPhone();
-console.log(Nokia.photo());
+// let Nokia = new phone()
+let s22 = new smartPhone("samsung");
+// console.log(Nokia.photo());  
 console.log(s22.photo());
