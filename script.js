@@ -511,22 +511,54 @@
 
 // Static method -----------------------------------------------------------------------
 
+// class animal{
+//    static  name ="donkey";
+
+//      static eat(){
+//       return `${this.name} is eating ..`
+//      }
+// }
+// class dog extends animal{
+//   sleep(name){
+//     return `${this.name} is sleeping.......`
+//   }
+// }
+// let d = new animal();
+// let a = new dog("pupyy")
+// console.log(dog.name)
+// console.log(dog.eat())
+
+
+//gettters and setters --------------------------------------------------------------
+
 class animal{
-   static  name ="donkey";
+  constructor(name) {
+    this._name = name;
+  }
+  fly()
+  {
+    alert("mei uda rha hoon ./");
 
-     static eat(){
-      return `${this.name} is eating ..`
-     }
-}
+  }
 
-class dog extends animal{
-  sleep(name){
-    return `${this.name} is sleeping.......`
+  get name (){
+  return this._name 
+  }
+
+  set name(newname){
+    this._name=newname;
   }
 }
 
-let d = new animal();
+class dog extends animal{
+  bukk()
+  {
+    console.log("bhidjidjdj")
+  }
+}
 
-let a = new dog("pupyy")
-console.log(dog.name)
-console.log(dog.eat())
+let a = new dog("chiki");
+a.name = "duggu"
+console.log(a.name)
+// instanceOf operator
+console.log(a instanceof animal)
