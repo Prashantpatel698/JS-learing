@@ -578,3 +578,18 @@
 // let [a,,b,...rest]=arr;
 // console.log(a,b,rest)
 
+// const vehicleOne ={
+//   brand:"Ford",
+//   model: 'Mustang',
+//   type: 'car',
+//   year: 2021, 
+//   color: 'red',
+ 
+// }
+
+// myVehicle(vehicleOne)
+
+// function myVehicle({brand,model,type,year,color}){
+//   const message = 'My ' + type + ' is a ' + color + ' ' + brand + ' ' + model + '.'; 
+//   console.log(message)
+// }
