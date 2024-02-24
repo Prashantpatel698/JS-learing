@@ -593,3 +593,25 @@
 //   const message = 'My ' + type + ' is a ' + color + ' ' + brand + ' ' + model + '.'; 
 //   console.log(message)
 // }
+
+
+// spread operator 
+
+// let arr1 = [1,2,3,4,4,5,3]
+// let arr2= [...arr1];
+// console.log(arr1)
+// console.log(arr2)
+// arr1[2]=9
+// console.log(arr1)
+// console.log(arr2)
+
+
+// let obj1 = {
+//   name:"prashant",
+//   age:20,
+
+// }
+// let obj2 = {...obj1}
+// obj1.name ="tarun"
+// console.log(obj1)
+// console.log(obj2)
