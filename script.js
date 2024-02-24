@@ -530,35 +530,51 @@
 
 
 //gettters and setters --------------------------------------------------------------
+// class animal{
+//   constructor(name) {
+//     this._name = name;
+//   }
+//   fly()
+//   {
+//     alert("mei uda rha hoon ./");
 
-class animal{
-  constructor(name) {
-    this._name = name;
-  }
-  fly()
-  {
-    alert("mei uda rha hoon ./");
+//   }
 
-  }
+//   get name (){
+//   return this._name 
+//   }
 
-  get name (){
-  return this._name 
-  }
+//   set name(newname){
+//     this._name=newname;
+//   }
+// }
 
-  set name(newname){
-    this._name=newname;
-  }
-}
+// class dog extends animal{
+//   bukk()
+//   {
+//     console.log("bhidjidjdj")
+//   }
+// }
 
-class dog extends animal{
-  bukk()
-  {
-    console.log("bhidjidjdj")
-  }
-}
+// let a = new dog("chiki");
+// a.name = "duggu"
+// console.log(a.name)
+// // instanceOf operator
+// console.log(a instanceof animal)
 
-let a = new dog("chiki");
-a.name = "duggu"
-console.log(a.name)
-// instanceOf operator
-console.log(a instanceof animal)
+//Destructuring ---------------------------------------------------------------------
+// let obj ={
+//   name:"prashant",
+//   age:20
+// }
+
+// let {name,age}  = obj;
+
+// console.log(age);
+// console.log(name)
+
+// var arr =["mastung" ,"gt","supra","bmw"];
+
+// let [a,,b,...rest]=arr;
+// console.log(a,b,rest)
+
