@@ -646,21 +646,39 @@
 
 
 //Lexical scoping------------------------------------------------------------------
-function outer()
-{
-    let username ="hitesh";
-    // console.log(age)
-    function inner()
-    {  let age =12;
-        console.log("inner fun  :"+username)
-    }
-    inner()
+// function outer()
+// {
+//     let username ="hitesh";
+//     // console.log(age)
+//     function inner()
+//     {  let age =12;
+//         console.log("inner fun  :"+username)
+//     }
+//     inner()
 
-    function innerTwo()
+//     function innerTwo()
+//     {
+//         console.log("inner Two  :"+username)
+//     }
+//     innerTwo();
+// }
+// const fun = outer();
+// fun
+
+
+
+//Closures-----------------------------------------------------------------------------
+
+function fun ()
+{
+    let username = 'jonh'
+
+    function funinner()
     {
-        console.log("inner Two  :"+username)
+        console.log(username);
     }
-    innerTwo();
+    return funinner;
 }
-const fun = outer();
-fun
+
+const myfun = fun()
+myfun()
