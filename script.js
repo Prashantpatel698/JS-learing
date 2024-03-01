@@ -609,9 +609,58 @@
 // let obj1 = {
 //   name:"prashant",
 //   age:20,
-
 // }
 // let obj2 = {...obj1}
 // obj1.name ="tarun"
 // console.log(obj1)
 // console.log(obj2)
+
+// console.log({...obj1,name:"tarun"})
+// console.log({name:"tarun",...obj1,})//this will not work it give the old object
+// function fun ()
+// {
+//   {
+//     var a =10;
+   
+//   }
+
+//   console.log(a)
+// }
+// fun()
+// console.log(a)
+
+
+
+// Hositing ---------------------------------------------------------------------------4
+// console.log(a)
+// function handle()
+// {
+
+//   console.log("hello")
+// }
+// let a =10;
+// console.log(a)
+// console.log(a)
+// var a = 10;
+// console.log(a)
+
+
+//Lexical scoping------------------------------------------------------------------
+function outer()
+{
+    let username ="hitesh";
+    // console.log(age)
+    function inner()
+    {  let age =12;
+        console.log("inner fun  :"+username)
+    }
+    inner()
+
+    function innerTwo()
+    {
+        console.log("inner Two  :"+username)
+    }
+    innerTwo();
+}
+const fun = outer();
+fun
