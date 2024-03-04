@@ -737,3 +737,9 @@
 // // }
 
 // obj.show()
+
+
+// regualr expressions
+ const regex =/p/g
+const msg = "Good eveing sir i am prashant patel im currently pursuing my b.tech from sirt college bhopal"
+console.log(msg.replace(regex,"P"))
