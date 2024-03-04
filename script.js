@@ -669,16 +669,71 @@
 
 //Closures-----------------------------------------------------------------------------
 
-function fun ()
-{
-    let username = 'jonh'
+// function fun ()
+// {
+//     let username = 'jonh'
 
-    function funinner()
-    {
-        console.log(username);
+//     function funinner()
+//     {
+//         console.log(username);
+//     }
+//     return funinner;
+// }
+
+// const myfun = fun()
+// myfun()
+
+
+// arrow function-------------------------------------------------------------
+//  const hello = (name,greeting)=> console.log("hello bhai "+name+greeting)
+//  hello("prashnat","good moring...")
+
+//  const obj =
+//  {
+//     name:"jonh",
+//     role:"UX designer",
+//     age:20,
+//     show:function()
+//     {
+//       hello =()=>{
+//         console.log(`the name is ${this.name} and his age ${this.age} role ${this.role}`)
+//       }
+//       hello()
+//     }
+//  }
+
+//  obj.show()
+
+
+
+// example of arrow function
+
+// function fun1 ()
+// {
+//     const a = 12;
+
+//    const  hello=()=>{
+//         console.log(this)
+//     }
+//     hello()
+// }
+// fun1()
+
+const obj=
+{
+    name:"prashant",
+    age:23,
+    show: function h()
+    {   
+    
+        setTimeout(()=>{
+            function hello(){
+                console.log(this.name)
+            }
+            hello()
+        },1000)
+ 
     }
-    return funinner;
 }
 
-const myfun = fun()
-myfun()
+obj.show()
