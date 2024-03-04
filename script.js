@@ -719,21 +719,21 @@
 // }
 // fun1()
 
-const obj=
-{
-    name:"prashant",
-    age:23,
-    show: function h()
-    {   
+// const obj=
+// {
+//     name:"prashant",
+//     age:23,
+//     show: function h()
+//     {   
     
-        setTimeout(()=>{
-            function hello(){
-                console.log(this.name)
-            }
-            hello()
-        },1000)
+//         setTimeout(()=>{
+//             function hello(){
+//                 console.log(this.name)
+//             }
+//             hello()
+//         },1000)
  
-    }
-}
+//     }
+// // }
 
-obj.show()
+// obj.show()
