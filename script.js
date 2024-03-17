@@ -740,6 +740,29 @@
 
 
 // regualr expressions
- const regex =/p/g
-const msg = "Good eveing sir i am prashant patel im currently pursuing my b.tech from sirt college bhopal"
-console.log(msg.replace(regex,"P"))
+//  const regex =/p/g
+// const msg = "Good eveing sir i am prashant patel im currently pursuing my b.tech from sirt college bhopal"
+// console.log(msg.replace(regex,"P"))
+
+
+
+// Call method ---------------------------------------------------------------------
+
+const obj1 = {
+    firstname:"prashant",
+    lastname:"patel",
+    printFullName: function(){
+        console.log(this.firstname+" "+this.lastname);
+    }
+}
+
+const obj2 = {
+    firstname:"adarsh",
+    lastname:"kirar"
+}
+
+// call method is used for function borrowing
+
+obj1.printFullName.call(obj2)
+
+obj1.printFullName()
